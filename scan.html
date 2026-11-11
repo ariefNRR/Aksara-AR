@@ -17,72 +17,16 @@
              vr-mode-ui="enabled: false" 
              device-orientation-permission-ui="enabled: false">
       
-      <!-- DAFTAR ASET 3D: Spasi pada nama file diganti dengan %20 -->
+      <!-- HANYA MEMUAT 1 MODEL UNTUK TES -->
       <a-assets>
         <a-asset-item id="model1" src="./1_Mie%20Aceh_Aceh.glb"></a-asset-item>
-        <a-asset-item id="model2" src="./2_Bika%20Ambon_Sumatera%20Utara.glb"></a-asset-item>
-        <a-asset-item id="model3" src="./3_Rendang_Sumatera%20Barat.glb"></a-asset-item>
-        <a-asset-item id="model4" src="./4_Gulai%20Ikan%20Patin_Riau.glb"></a-asset-item>
-        <a-asset-item id="model5" src="./5_Otak-Otak_Kepulauan%20Riau.glb"></a-asset-item>
-        <a-asset-item id="model6" src="./6_Tempoyak%20Ikan%20Patin_Jambi.glb"></a-asset-item>
-        <a-asset-item id="model7" src="./7_Pempek_Sumatera%20Selatan.glb"></a-asset-item>
-        <a-asset-item id="model8" src="./8_Pendap_Bengkulu.glb"></a-asset-item>
-        <a-asset-item id="model9" src="./9_Seruit_Lampung.glb"></a-asset-item>
-        <a-asset-item id="model10" src="./10_Lempah%20Kuning_Kep.%20Bangka%20Belitung.glb"></a-asset-item>
       </a-assets>
 
       <a-camera position="0 0 0" look-controls="enabled: false"></a-camera>
-
-      <!-- PEMANGGILAN TARGET DAN MODEL (Skala diatur ke 0.1) -->
       
       <!-- Target 0: Flashcard ke-1 -->
       <a-entity mindar-image-target="targetIndex: 0">
         <a-gltf-model rotation="0 0 0" position="0 0 0" scale="0.1 0.1 0.1" src="#model1"></a-gltf-model>
-      </a-entity>
-
-      <!-- Target 1: Flashcard ke-2 -->
-      <a-entity mindar-image-target="targetIndex: 1">
-        <a-gltf-model rotation="0 0 0" position="0 0 0" scale="0.1 0.1 0.1" src="#model2"></a-gltf-model>
-      </a-entity>
-
-      <!-- Target 2: Flashcard ke-3 -->
-      <a-entity mindar-image-target="targetIndex: 2">
-        <a-gltf-model rotation="0 0 0" position="0 0 0" scale="0.1 0.1 0.1" src="#model3"></a-gltf-model>
-      </a-entity>
-
-      <!-- Target 3: Flashcard ke-4 -->
-      <a-entity mindar-image-target="targetIndex: 3">
-        <a-gltf-model rotation="0 0 0" position="0 0 0" scale="0.1 0.1 0.1" src="#model4"></a-gltf-model>
-      </a-entity>
-
-      <!-- Target 4: Flashcard ke-5 -->
-      <a-entity mindar-image-target="targetIndex: 4">
-        <a-gltf-model rotation="0 0 0" position="0 0 0" scale="0.1 0.1 0.1" src="#model5"></a-gltf-model>
-      </a-entity>
-
-      <!-- Target 5: Flashcard ke-6 -->
-      <a-entity mindar-image-target="targetIndex: 5">
-        <a-gltf-model rotation="0 0 0" position="0 0 0" scale="0.1 0.1 0.1" src="#model6"></a-gltf-model>
-      </a-entity>
-
-      <!-- Target 6: Flashcard ke-7 -->
-      <a-entity mindar-image-target="targetIndex: 6">
-        <a-gltf-model rotation="0 0 0" position="0 0 0" scale="0.1 0.1 0.1" src="#model7"></a-gltf-model>
-      </a-entity>
-
-      <!-- Target 7: Flashcard ke-8 -->
-      <a-entity mindar-image-target="targetIndex: 7">
-        <a-gltf-model rotation="0 0 0" position="0 0 0" scale="0.1 0.1 0.1" src="#model8"></a-gltf-model>
-      </a-entity>
-
-      <!-- Target 8: Flashcard ke-9 -->
-      <a-entity mindar-image-target="targetIndex: 8">
-        <a-gltf-model rotation="0 0 0" position="0 0 0" scale="0.1 0.1 0.1" src="#model9"></a-gltf-model>
-      </a-entity>
-
-      <!-- Target 9: Flashcard ke-10 -->
-      <a-entity mindar-image-target="targetIndex: 9">
-        <a-gltf-model rotation="0 0 0" position="0 0 0" scale="0.1 0.1 0.1" src="#model10"></a-gltf-model>
       </a-entity>
       
     </a-scene>
