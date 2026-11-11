@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Kamera AR</title>
+    <title>Kamera AR - Aksara</title>
     <script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/mind-ar@1.2.2/dist/mindar-image-aframe.prod.js"></script>
     <style>
@@ -11,7 +11,7 @@
     </style>
   </head>
   <body>
-    <!-- Mengambil file target dan model 3D langsung dari folder GitHub yang sama -->
+    <!-- Pastikan file targets.mind benar-benar bernama huruf kecil semua -->
     <a-scene mindar-image="imageTargetSrc: ./targets.mind;" 
              color-space="sRGB" 
              renderer="colorManagement: true, physicallyCorrectLights" 
@@ -19,7 +19,8 @@
              device-orientation-permission-ui="enabled: false">
       
       <a-assets>
-        <a-asset-item id="model1" src="./1__Keimanan_dan_Ketakwaan_final.glb"></a-asset-item>
+        <!-- Memanggil model 3D. Spasi diganti %20 -->
+        <a-asset-item id="model1" src="./1_Mie%20Aceh_Aceh.glb"></a-asset-item>
       </a-assets>
 
       <a-camera position="0 0 0" look-controls="enabled: false"></a-camera>
@@ -31,4 +32,3 @@
     </a-scene>
   </body>
 </html>
-
